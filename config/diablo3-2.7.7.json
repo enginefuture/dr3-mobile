@@ -1,0 +1,70 @@
+{
+  "title_id": "01001B300B9BE000",
+  "program_id": "01001B300B9BE000",
+  "display_version": "2.7.7.92380",
+  "upstream_commit": "9579030e5b1f0443c12b7376559560915b6d4c4b",
+  "runtime_modules": [
+    "main",
+    "sdk"
+  ],
+  "modules": {
+    "main": {
+      "build_id": "2607a74f5df7754cc0357b5df7e496931355d8ca000000000000000000000000",
+      "sha256": "7f3910c7a15d4bc053cdc8204f1abcac526c57f205c584d1d97779a1a10a98c3",
+      "bss_bytes": 9737708,
+      "segments": [
+        {
+          "name": "text",
+          "offset": 0,
+          "bytes": 13052816,
+          "sha256": "6ede20a0066649ea672b4588b8f56e45f6b45f344eee62430742313b3d3fc574",
+          "header_hash_required": true
+        },
+        {
+          "name": "rodata",
+          "offset": 13053952,
+          "bytes": 4344260,
+          "sha256": "381816eee002c9596844dd53b617693576204ccded9e42e71aefc361cc395988",
+          "header_hash_required": true
+        },
+        {
+          "name": "data",
+          "offset": 17399808,
+          "bytes": 805396,
+          "sha256": "300f0c2c56fb53cea260b6048c8fc7045056bc371cf16fb4735489edc8ce0284",
+          "header_hash_required": true
+        }
+      ]
+    },
+    "sdk": {
+      "build_id": "3ae34e689d7a35f13cbf42bfd672af8b5eb64a9d000000000000000000000000",
+      "sha256": "21e08d575abd8cb08ba1ab3be3fa92c02a1384428f161e8e88eb578e897f2c0b",
+      "bss_bytes": 782352,
+      "segments": [
+        {
+          "name": "text",
+          "offset": 0,
+          "bytes": 5507408,
+          "sha256": "023da097f710399d6d2135fc89632e1450302352a1759043ff25a8f3c55d0bb6",
+          "header_hash_required": true
+        },
+        {
+          "name": "rodata",
+          "offset": 5509120,
+          "bytes": 6917288,
+          "sha256": "87460d1b7f3db79dcc6e5e67f4998f3fa6e9f4d403fff669e7241b6c50a19ff6",
+          "header_hash_required": true
+        },
+        {
+          "name": "data",
+          "offset": 12427264,
+          "bytes": 401392,
+          "sha256": "e1346d9f6e431ede0f2bae8d266158568a284d839e66b915c83ab0b2f617a94c",
+          "header_hash_required": true
+        }
+      ]
+    }
+  },
+  "romfs_marker": "CPKs/CoreCommon.cpk",
+  "platforms_verified": []
+}

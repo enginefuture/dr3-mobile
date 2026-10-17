@@ -1,0 +1,31 @@
+# Diablo III 2.7.7: measured identity; memory and NVN values are bring-up candidates.
+title_id	01001B300B9BE000
+program_id	01001B300B9BE000
+name	DR3 Mobile
+ipa	DR3Mobile.ipa
+app_category	public.app-category.role-playing-games
+pad_layout	full
+package	v1441792
+shader_versions	v1441792
+modules	main sdk
+romfs_marker	CPKs/CoreCommon.cpk
+shared_font	ttf
+# Mac bring-up: nninitStartup reserves 0x30000000 bytes; the 256 MiB alias candidate failed.
+# Reserve 8 GiB virtual space with a 4 GiB alias; actual commit is measured separately.
+mem_reserve	0x200000000
+mem_alias	0x100000000
+mem_stack	0x10000000
+app_pool	0xCD500000
+# SDK 8 candidate; target API version check still needs measurement.
+device_api	53.313
+# Runtime Maxwell translation: tcb_8, A, C map to offsets 0x20, 0x28, 0x30.
+# Full-corpus texture/image coverage remains under verification.
+nvn_tex_base	0x20
+nvn_tex_slots	32
+nvn_samp_base	0x568
+nvn_img_base	0x120
+nvn_img_slots	8
+nvn_ssbo_bases	vs=0x110 ps=0x510 cs=0x310
+shader_groups	/CPKs/=base /Update/CPKs/=update
+shader_note	D3 bring-up: shader corpus pending
+build	v1441792	2.7.7.92380	main=2607a74f5df7754cc0357b5df7e49693	sdk=3ae34e689d7a35f13cbf42bfd672af8b

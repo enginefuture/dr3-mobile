@@ -1,0 +1,29 @@
+{
+  "source_project": "d2r-mobile",
+  "source_commit": "9393b00ea9aca52d9254214da93738f26582562f",
+  "license": "MIT; Copyright (c) 2026 jhaizhou",
+  "files": [
+    {
+      "source": "dm/ios/Sources/DmTouchControlArt.h",
+      "destination": "DmTouchControlArt.h",
+      "sha256": "50d77ffbef01f5278bcbe79636ea373f7687095efc821a84b0f03eb0f5caaa86",
+      "bytes": 7552
+    },
+    {
+      "source": "dm/ios/Sources/ControlArt/dm_mobile_socket.png",
+      "destination": "ControlArt/dm_mobile_socket.png",
+      "sha256": "06492a002198c2a79353eeb60a953f2cebd5fead001c09e2ce6786226d69758b",
+      "bytes": 343930
+    },
+    {
+      "source": "LICENSE",
+      "destination": "ControlArt/LICENSE.d2r-mobile.txt",
+      "sha256": "5811600bb8fc4522d3310e8e0e637a1bb14b7c64412f8cfc6234872eb53129b9",
+      "bytes": 1065
+    }
+  ],
+  "scope": "Generic control material and vector art only. No D2R skill glyphs, ROM assets, touch state machine or game-specific mapping copied.",
+  "integration": "Bundle dm_mobile_socket.png either as flattened resource or under ControlArt/. Include license/provenance metadata.",
+  "original_d3_input_contract_sha256": "a6e6fd263b344a742c71b376489a09d3f43667def6c81f0ee8753e27b8287e37",
+  "source_url": "https://github.com/jhaizhou-ops/d2r-mobile/tree/9393b00ea9aca52d9254214da93738f26582562f"
+}

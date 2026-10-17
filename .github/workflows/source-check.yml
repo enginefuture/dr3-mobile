@@ -1,0 +1,36 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  source-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/audit_public.py --all-history
+      - run: pip install -r requirements.txt
+      - name: Synthetic checks without game files
+        run: |
+          for pattern in test_public_audit.py test_guards.py test_cpk.py test_audit_cpk_payloads.py test_rom_audit.py test_shader_interfaces.py test_mobile_graphics_profile.py; do
+            python3 -m unittest discover -s tests -p "$pattern" -v
+          done
+  native-source:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Reconstruct pinned source only
+        run: python3 tools/dr3.py bootstrap
+      - name: Synthetic native tests without private corpus or Bonjour
+        run: python3 -m unittest discover -s tests -v
