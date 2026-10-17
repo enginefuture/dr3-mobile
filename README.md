@@ -29,7 +29,7 @@ Constant-update forwarding substantially improved the observed Mac scene perform
 
 ## Build locally
 
-Requires an Apple silicon Mac, macOS 26+, full Xcode with Metal tools (development used Xcode 27), Python 3.11+, LLVM, .NET 10, SPIRV-Cross, and your own legally prepared game files. iOS builds additionally need XcodeGen and an appropriate development-signing account/profile with both required memory entitlements.
+Requires an Apple silicon Mac, macOS 26+, full Xcode with Metal tools (development used Xcode 27), Python 3.12+, LLVM, .NET 10, SPIRV-Cross, and your own legally prepared game files. iOS builds additionally need XcodeGen and an appropriate development-signing account/profile with both required memory entitlements.
 
 ```sh
 git clone https://github.com/enginefuture/dr3-mobile.git

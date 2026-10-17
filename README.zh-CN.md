@@ -27,7 +27,7 @@
 
 ## 自行构建
 
-需要 Apple silicon Mac、macOS 26+、完整 Xcode/Metal 工具链（实测 Xcode 27）、Python 3.11+、LLVM、.NET 10、SPIRV-Cross，以及自己的合法游戏文件。iOS 还需 XcodeGen、开发签名账号和所需内存权限。
+需要 Apple silicon Mac、macOS 26+、完整 Xcode/Metal 工具链（实测 Xcode 27）、Python 3.12+、LLVM、.NET 10、SPIRV-Cross，以及自己的合法游戏文件。iOS 还需 XcodeGen、开发签名账号和所需内存权限。
 
 ```sh
 git clone https://github.com/enginefuture/dr3-mobile.git
