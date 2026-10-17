@@ -15,6 +15,8 @@ jobs:
           python-version: '3.12'
       - run: python3 tools/audit_public.py --all-history
       - run: pip install -r requirements.txt
+      - name: Reconstruct source headers for graphics guards
+        run: python3 tools/dr3.py bootstrap
       - name: Synthetic checks without game files
         run: |
           for pattern in test_public_audit.py test_guards.py test_cpk.py test_audit_cpk_payloads.py test_rom_audit.py test_shader_interfaces.py test_mobile_graphics_profile.py; do
